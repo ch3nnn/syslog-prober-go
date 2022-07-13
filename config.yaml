@@ -1,0 +1,29 @@
+# 系统配置
+server_addr: "0.0.0.0:5140"
+
+# 系统日志
+log_level: "ERROR"
+log_path: "logs/service.log"
+log_max_size: 50
+log_max_backups: 5
+log_max_age: 7
+
+# kafka
+kafka_servers:
+  - "127.0.0.1:9092"
+
+kafka_topic: "test"
+# 同步 "Sync" 异步 "Async"
+kafka_pro_mode: "Async"
+
+# 缓存
+cache_address: "localhost:6379"
+cache_network: "tcp"
+cache_password: "123456"
+cache_database: 9
+
+
+# 平台
+sa_addr: "http://localhost:8000"
+sa_regular_time: 600
+sa_parse_cache_name: "log:prober:parse_config"
